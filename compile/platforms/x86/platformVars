@@ -10,6 +10,7 @@ PLATFORM_NAME := Intel x86
 # Add flags to compile 32 bit code
 CFLAGS        += -m32
 ASFLAGS       += --32
+LDFLAGS       += -melf_i386
 
 # Add a define so we can test for x86 in C code if absolutely needed
 DEFS          += -D_XINU_PLATFORM_X86_
